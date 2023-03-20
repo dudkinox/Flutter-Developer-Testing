@@ -6,7 +6,7 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
 class DetailUser extends StatefulWidget {
-  DetailUser({
+  const DetailUser({
     Key? key,
     required this.url,
     required this.firstname,
@@ -14,11 +14,11 @@ class DetailUser extends StatefulWidget {
     required this.tel,
     required this.email,
   }) : super(key: key);
-  String url;
-  String firstname;
-  String lastname;
-  String tel;
-  String email;
+  final String url;
+  final String firstname;
+  final String lastname;
+  final String tel;
+  final String email;
 
   @override
   State<DetailUser> createState() => _DetailUserState();
